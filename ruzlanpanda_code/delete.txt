@@ -1,0 +1,21 @@
+<?php
+
+include 'dbConfig.php';
+$id= $_GET["valueToSearch"]
+$sql="drop * from orders where orders.id='$id' ";
+
+
+if(isset($_POST['search']))
+{
+    $Search_T= $_POST['valueToSearch'];
+$sql.= "where location.loc = '{$Search_T}'";
+    
+    
+}
+$query=mysql_query($sql) or die(mysql_error());
+?>
+
+<form action="delete.php" method="POST">
+			<input type="text" name="valueToSearch" placeholder="Order id"><br><br>
+            <input type="submit" name="search" value="Delete"><br><br>
+			</form>

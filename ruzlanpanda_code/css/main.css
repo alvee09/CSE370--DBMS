@@ -1,0 +1,22 @@
+.logo {
+    height: 35px;
+    width: 35px;
+    margin-top: 10px;
+}
+
+.panel_bod {
+    border: 1px solid #F05F40;
+}
+
+.panel_mod {
+    color: black !important;
+    background-color: transparent !important;
+    border: 1px solid #F05F40 !important;
+}
+
+.know img {}
+
+#iconic {
+    color: #F05F40;
+    font-style: normal;
+}
